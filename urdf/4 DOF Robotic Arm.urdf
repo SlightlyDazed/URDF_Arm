@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="4 DOF Robotic Arm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.29810991020575 0.256733185763736 0.495051962035684"
+        rpy="0 0 0" />
+      <mass
+        value="20.0560151281982" />
+      <inertia
+        ixx="0.424863354770225"
+        ixy="-9.2104773222781E-06"
+        ixz="-6.80764611103073E-05"
+        iyy="0.499123897504905"
+        iyz="-0.0409894080355028"
+        izz="0.340254550268981" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="codo1">
+    <inertial>
+      <origin
+        xyz="-1.5660493457581E-09 0.213076911762192 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="14.5226439803687" />
+      <inertia
+        ixx="0.281388271542566"
+        ixy="-7.46899828429622E-09"
+        ixz="1.72288813632404E-08"
+        iyy="0.109543792726925"
+        iyz="1.72112545802295E-16"
+        izz="0.30803827090323" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="codo1_joint"
+    type="continuous">
+    <origin
+      xyz="0.298094132392334 -0.463705966908052 0.323519483592205"
+      rpy="1.5707963267949 0 1.02161237501423" />
+    <parent
+      link="base_link" />
+    <child
+      link="codo1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="codo2">
+    <inertial>
+      <origin
+        xyz="-1.59822018619415E-07 0.198943961809013 -3.91556086423162E-05"
+        rpy="0 0 0" />
+      <mass
+        value="14.7860900538044" />
+      <inertia
+        ixx="0.648573491392559"
+        ixy="9.47841748699663E-08"
+        ixz="-2.08387553601863E-07"
+        iyy="0.0776047142125779"
+        iyz="-0.00599169952336004"
+        izz="0.624351869580618" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="codo2_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.336 0"
+      rpy="-3.14159265358979 0 -2.34321163045072" />
+    <parent
+      link="codo1" />
+    <child
+      link="codo2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="codo3">
+    <inertial>
+      <origin
+        xyz="0.032583276380147 0.10809919971837 3.36562252511996E-08"
+        rpy="0 0 0" />
+      <mass
+        value="7.81062225868975" />
+      <inertia
+        ixx="0.0572109198550227"
+        ixy="-0.0101696176067118"
+        ixz="-1.51529386781257E-09"
+        iyy="0.0613284358736977"
+        iyz="-2.30215332110151E-08"
+        izz="0.0913511740371457" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="codo3_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.499999999999997 0"
+      rpy="0 0 -0.198498030644397" />
+    <parent
+      link="codo2" />
+    <child
+      link="codo3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="codo4">
+    <inertial>
+      <origin
+        xyz="0.108182194926982 -7.70846603848074E-06 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="5.14222343811042" />
+      <inertia
+        ixx="0.0291243842600355"
+        ixy="8.26016054656514E-07"
+        ixz="0"
+        iyy="0.0483771554852105"
+        iyz="-6.07153216591882E-18"
+        izz="0.0383609598792745" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="codo4_joint"
+    type="continuous">
+    <origin
+      xyz="0.217298151168251 0.145000000000007 0"
+      rpy="-1.16289184952218 0 0" />
+    <parent
+      link="codo3" />
+    <child
+      link="codo4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="codo5">
+    <inertial>
+      <origin
+        xyz="0.0015080108101535 0.00147848765713465 1.17908454111415E-08"
+        rpy="0 0 0" />
+      <mass
+        value="3.39993707597979" />
+      <inertia
+        ixx="0.0127520011304052"
+        ixy="0.000127390375987125"
+        ixz="-0.000273689761827018"
+        iyy="0.0188035148432044"
+        iyz="0.000243247381685449"
+        izz="0.0126702333978519" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4 DOF Robotic Arm/meshes/codo5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="codo5_joint"
+    type="continuous">
+    <origin
+      xyz="0.230144683333081 0 0"
+      rpy="0 0 0.726588237519581" />
+    <parent
+      link="codo4" />
+    <child
+      link="codo5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
